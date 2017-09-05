@@ -26,7 +26,7 @@ function getDefaultModules() {
     loaders: [
       {
         test: /\.css$/,
-        loader: 'style-loader!css-loader!autoprefixer-loader?{browers:["last 2 version","firefox 15"]}'
+        loader: 'style-loader!css-loader!postcss-loader?{browsers:["last 2 version","firefox 15"]}'
       },
       {
         test: /\.sass/,
@@ -34,24 +34,24 @@ function getDefaultModules() {
       },
       {
         test: /\.scss/,
-        loader: 'style-loader!css-loader!autoprefixer-loader?{browers:["last 2 version","firefox 15"]}!sass-loader?outputStyle=expanded'
+        loader: 'style-loader!css-loader!postcss-loader?{browsers:["last 2 version","firefox 15"]}!sass-loader?outputStyle=expanded'
       },
       {
         test: /\.less/,
-        loader: 'style-loader!css-loader!less-loader!autoprefixer-loader?{browers:["last 2 version","firefox 15"]}'
+        loader: 'style-loader!css-loader!less-loader!postcss-loader?{browsers:["last 2 version","firefox 15"]}'
       },
       {
         test: /\.styl/,
-        loader: 'style-loader!css-loader!stylus-loader!autoprefixer-loader?{browers:["last 2 version","firefox 15"]}'
+        loader: 'style-loader!css-loader!stylus-loader!postcss-loader?{browsers:["last 2 version","firefox 15"]}'
       },
       {
         test: /\.(png|jpg|gif|woff|woff2)$/,
         loader: 'url-loader?limit=8192'
       },
-      {
+      /*{
         test:/\.json$/,
         loader:'json-loader'
-      },
+      },*/
       {
         test: /\.(mp4|ogg|svg)$/,
         loader: 'file-loader'
