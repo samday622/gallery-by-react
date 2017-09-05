@@ -24,6 +24,30 @@ html,body{
   height: 100%;
   overflow: hidden;
   background-color: #ddd;
+
+  @at-root {
+    .img-figure{
+      position: absolute;
+      width: 300px;
+      height: 540px;
+      margin:0;
+      padding:20px;
+      background-color: #ffffff;
+      box-sizing: border-box;
+      img{
+        width:256px;
+        height: 455px;
+      }
+    }
+    figcaption{
+      text-align: center;
+      .img-title{
+        margin:20px 0 0 0;
+        color:#a7a0a2;
+        font-size:16px;
+      }
+    }
+  }
 }
 /* image -- end */
 
