@@ -45,7 +45,7 @@ function getDefaultModules() {
         loader: 'style-loader!css-loader!stylus-loader!postcss-loader?{browsers:["last 2 version","firefox 15"]}'
       },
       {
-        test: /\.(png|jpg|gif|woff|woff2)$/,
+        test: /\.(png|jpg|gif|woff|woff2|eot|ttf|svg)$/,
         loader: 'url-loader?limit=8192'
       },
       {
