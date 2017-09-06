@@ -63,6 +63,9 @@ var ImgFigure = React.createClass({
       }.bind(this));
 
     }
+    if(this.props.arrange.isCenter){
+      styleObj.zIndex = 11;
+    }
 
     let imgFigureClassName = "img-figure";
     imgFigureClassName += this.props.arrange.isInverse ? ' is-inverse':'';
