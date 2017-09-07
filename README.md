@@ -80,7 +80,7 @@ npm run dist</pre></div>
 <ul>
 <li>
 <p>路径错误</p>
-<div align="center"><a href="/samday622/gallery-by-react/blob/master/src/images/error.jpeg" target="_blank"><img src="/samday622/gallery-by-react/blob/master/src/images/error.jpeg" width="400" alt="error" style="max-width:100%;"></a></div>
+<div align="center"><a href="error.jpeg" target="_blank"><img src="error.jpeg" width="400" alt="error" style="max-width:100%;"></a></div>
 <p>原因：<br>
 在本地编译时，由于运行时是在根目录，可以写绝对路径 <br>
 但在生成的网页中，项目处于二级目录下，需要将编译后的绝对地址改为相对地址 <br></p>
@@ -108,7 +108,7 @@ npm run dist</pre></div>
 </li>
 <li>
 <p>图片没有编译到dist目录</p>
-<div align="center"><a href="/samday622/gallery-by-react/blob/master/src/images/error2.jpeg" target="_blank"><img src="/samday622/gallery-by-react/blob/master/src/images/error2.jpeg" width="400" alt="error" style="max-width:100%;"></a></div>
+<div align="center"><a href="error2.jpeg" target="_blank"><img src="error2.jpeg" width="400" alt="error" style="max-width:100%;"></a></div>
 <p>原因：<br>
 npm run dist时，没有把images目录包含进去 <br>
 <code>"copy": "copyfiles -f ./src/index.html ./src/favicon.ico ./dist"</code> <br></p>
