@@ -25,12 +25,12 @@ imageDatas = (function genImageURL(imageDatasArr){
  *获取区间内的一个随机值
  */
 
-let getRangeRandom = (low,high) => Math.ceil(Math.random() * (high - low) + low);
+let getRangeRandom = (low,high) => Math.floor(Math.random() * (high - low) + low);
 
 /*
  *获取0～30° 之间的一个任意正负值
  */
-let get30DegRandom = () => ((Math.random() > 0.5 ? '' : '-' )+ Math.ceil(Math.random() * 30));
+let get30DegRandom = () => ((Math.random() > 0.5 ? '' : '-' )+ Math.floor(Math.random() * 30));
 
 
 //图片管理
@@ -210,6 +210,8 @@ var AppComponent = React.createClass({
       }else {
         hPosRangeLORX = hPosRangeRightSecX;
       }
+
+      console.log(imgsArrangeArr);
       imgsArrangeArr[i] = {
         pos:{
           top: getRangeRandom(hposRageY[0],hposRageY[1]),
@@ -220,8 +222,8 @@ var AppComponent = React.createClass({
       };
     }
 
-    if(imgsArrangeTopArr && imgsArrangeArr[0]){
-      imgsArrangeArr.splice(topImgSpliceIndex,0,imgsArrangeArr[0]);
+    if(imgsArrangeTopArr && imgsArrangeTopArr[0]){
+      imgsArrangeArr.splice(topImgSpliceIndex,0,imgsArrangeTopArr[0]);
     }
     imgsArrangeArr.splice(centerIndex,0,imgsArrangeCenterArr[0]);
 
