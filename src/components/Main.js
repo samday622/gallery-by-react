@@ -211,7 +211,6 @@ var AppComponent = React.createClass({
         hPosRangeLORX = hPosRangeRightSecX;
       }
 
-      console.log(imgsArrangeArr);
       imgsArrangeArr[i] = {
         pos:{
           top: getRangeRandom(hposRageY[0],hposRageY[1]),
