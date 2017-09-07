@@ -60,19 +60,19 @@ npm run dist</pre></div>
 <ul>
 <li>解决方法: 规划好整个组件的排版布局，如下。通过类名控制翻转</li>
 </ul>
-<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">section</span>&gt; -- relative
-&lt;<span class="pl-ent">section</span>&gt; -- relative
-&lt;<span class="pl-ent">figure</span>&gt; -- absolute
-&lt;<span class="pl-ent">img</span> /&gt;
-&lt;<span class="pl-ent">figcaption</span>&gt;
-&lt;<span class="pl-ent">h2</span>&gt;(图片正面描述)&lt;/<span class="pl-ent">h2</span>&gt;
-&lt;<span class="pl-ent">div</span>&gt;(图片背面描述)&lt;/<span class="pl-ent">div</span>&gt; -- absolute
-&lt;/<span class="pl-ent">figcaption</span>&gt;
-&lt;/<span class="pl-ent">figure</span>&gt;
-&lt;/<span class="pl-ent">section</span>&gt;
-&lt;<span class="pl-ent">nav</span>&gt; -- absolute
-（导航点组件)
-&lt;/<span class="pl-ent">nav</span>&gt;
+  <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">section</span>&gt; -- relative
+  &lt;<span class="pl-ent">section</span>&gt; -- relative
+    &lt;<span class="pl-ent">figure</span>&gt; -- absolute
+      &lt;<span class="pl-ent">img</span> /&gt;
+      &lt;<span class="pl-ent">figcaption</span>&gt;
+        &lt;<span class="pl-ent">h2</span>&gt;(图片正面描述)&lt;/<span class="pl-ent">h2</span>&gt;
+        &lt;<span class="pl-ent">div</span>&gt;(图片背面描述)&lt;/<span class="pl-ent">div</span>&gt; -- absolute
+      &lt;/<span class="pl-ent">figcaption</span>&gt;
+    &lt;/<span class="pl-ent">figure</span>&gt;
+  &lt;/<span class="pl-ent">section</span>&gt;
+  &lt;<span class="pl-ent">nav</span>&gt; -- absolute
+    （导航点组件)
+  &lt;/<span class="pl-ent">nav</span>&gt;
 &lt;/<span class="pl-ent">section</span>&gt;</pre></div>
 <p>由于实现图片翻转有两种方式：点击图片自身 + 点击导航点 <br>
 因此翻转函数写在父组件为宜，直接return一个闭包函数</p>
