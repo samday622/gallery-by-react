@@ -35,7 +35,6 @@ npm run dist</pre></div>
 <ul>
 <li>新版generator-react-webpack生成的工程环境移除了grunt，运行命令<code>npm run start</code></li>
 <li>以往webpack.config.js的配置内容在cfg/default.js中配置</li>
-<li>生成dist目录内容 <code>npm run clean</code> <code>npm run copy</code> <code>npm run start</code></li>
 <li>构建出的工作环境webpack默认版本为1.x，不包含json-loader.<br>
 解析.json文件一种解决办法是安装json-loader，并在default.js中配置。<a href="https://github.com/webpack-contrib/json-loader">json-loader</a><br>
 另一种解决办法是全局安装webpack2.x及以上版本，自带有json-loader <code>npm install -g webpack@2.x</code><br>
@@ -81,7 +80,7 @@ npm run dist</pre></div>
 <ul>
 <li>
 <p>路径错误</p>
-<div align="center"><a href="/Wobugaosuni/galleryByReact/blob/master/src/images/error.jpeg" target="_blank"><img src="/Wobugaosuni/galleryByReact/raw/master/src/images/error.jpeg" width="400" alt="error" style="max-width:100%;"></a></div>
+<div align="center"><a href="/samday622/gallery-by-react/blob/master/src/images/error.jpeg" target="_blank"><img src="/samday622/gallery-by-react/blob/master/src/images/error.jpeg" width="400" alt="error" style="max-width:100%;"></a></div>
 <p>原因：<br>
 在本地编译时，由于运行时是在根目录，可以写绝对路径 <br>
 但在生成的网页中，项目处于二级目录下，需要将编译后的绝对地址改为相对地址 <br></p>
@@ -109,7 +108,7 @@ npm run dist</pre></div>
 </li>
 <li>
 <p>图片没有编译到dist目录</p>
-<div align="center"><a href="/Wobugaosuni/galleryByReact/blob/master/src/images/error2.jpeg" target="_blank"><img src="/Wobugaosuni/galleryByReact/raw/master/src/images/error2.jpeg" width="400" alt="error" style="max-width:100%;"></a></div>
+<div align="center"><a href="/samday622/gallery-by-react/blob/master/src/images/error2.jpeg" target="_blank"><img src="/samday622/gallery-by-react/blob/master/src/images/error2.jpeg" width="400" alt="error" style="max-width:100%;"></a></div>
 <p>原因：<br>
 npm run dist时，没有把images目录包含进去 <br>
 <code>"copy": "copyfiles -f ./src/index.html ./src/favicon.ico ./dist"</code> <br></p>
